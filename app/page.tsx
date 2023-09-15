@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import ResponsiveAppBar from "./components/appbar"
+import MediaControlCard from "./components/music"
 
-export default function Home() {
+export const Project = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Olá mundo!</h1>
-    </main>
+    <>
+    <ResponsiveAppBar />
+    <MediaControlCard />
+    </>
   )
 }
+
+export default Project
